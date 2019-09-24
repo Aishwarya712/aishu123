@@ -34,11 +34,11 @@ public class Sample1  {
 		//driver.manage().window().maximize();
 		driver.get("https://connect.maveric-systems.com/index.php/site/login");
 		
-		 // WebElement username=driver.findElement(By.id("LoginForm_password"));//storing
-		 // username.sendKeys("abcd"); username.clear();
+		 WebElement username=driver.findElement(By.id("LoginForm_password"));//storing
+		  username.sendKeys("abcd"); username.clear();
 		  
-		 // driver.findElement(By.name("LoginForm[username]")).sendKeys("drdes");
-		 // driver.findElement(By.id("LoginForm_password")).sendKeys("udsjkfhsk");
+		 driver.findElement(By.name("LoginForm[username]")).sendKeys("drdes");
+		 driver.findElement(By.id("LoginForm_password")).sendKeys("udsjkfhsk");
 		// driver.findElement(By.name("yt0")).click(); String test=((WebElement)
 		//  driver.findElements(By.name("yt0"))).getText();
 		 // driver.findElements(By.tagName("input")); System.out.println();
@@ -166,10 +166,10 @@ Thread.sleep(3000);*/
 		String toolTipText=element.getAttribute("property");
 		System.out.println(toolTipText);*/
 		//use page factor
-		pagefactelements pge=new pagefactelements(driver);
-		pge.Username.sendKeys("aishwaryarn");
+		//pagefactelements pge=new pagefactelements(driver);
+		//pge.Username.sendKeys("aishwaryarn");
 
-		pge.Password.sendKeys("abcd");
+		//pge.Password.sendKeys("abcd");
 		
 		//page factor
 		
